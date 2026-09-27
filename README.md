@@ -38,7 +38,7 @@ C programming exercises focused on file processing and binary analysis:
 - **`L6P1.c`** reads grade-style records from `numbers.txt`, separates values into `below60.txt` and `above60.txt`, and prints processing totals.
 - **`L6P2.c`** produces a hexadecimal/character view of a file, reports its first four bytes as a magic number, and estimates whether the file is text or binary based on printable ASCII content.
 
-### `TLS_Chat/`
+### `socket_programming/`
 A multi-threaded, encrypted client-server messaging application built in Python. This project demonstrates the practical implementation of TLS over TCP sockets.
 
 - **`generate_cert.py`** uses the `cryptography` library to generate a self-signed RSA 2048-bit private key (`server.key`) and X.509 certificate (`server.crt`).
